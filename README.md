@@ -107,7 +107,6 @@ Below is the table for the hyperparameters used in the **DQN** and **SARSA** alg
 
 ## GIF
 
-![Screenshot 2024-09-26 010003](https://github.com/user-attachments/assets/78784c94-13ea-4064-af00-f5e26e0d828a)
 
 ## Conclusion
 
