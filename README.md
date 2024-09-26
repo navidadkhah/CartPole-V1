@@ -107,7 +107,7 @@ Below is the table for the hyperparameters used in the **DQN** and **SARSA** alg
 
 ## GIF
 
-
+https://github.com/user-attachments/assets/344f8086-b05a-4151-8aa3-1a539f9d7430
 ## Conclusion
 
 This project demonstrates the advantages of **DQN** over **SARSA** in reinforcement learning tasks, particularly when dealing with environments that require efficient exploration and experience replay. Boltzmann exploration proved more effective than epsilon-greedy, especially when tuned correctly.
