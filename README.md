@@ -15,7 +15,6 @@ The **CartPole-v1** environment involves balancing a pole on a cart that moves a
 | **Maximum Episode Length**| 500 time steps.  |
 
 ### State Variables:
-The state is represented by four variables:
 ``` 
 Cart Position (x)
 Cart Velocity (ẋ)
@@ -51,20 +50,12 @@ The task is episodic, and a well-trained agent aims to keep the pole balanced fo
 
 ## Hyperparameters
 
-Below is the table for the hyperparameters used in the **DQN** and **SARSA** algorithms based on the three stages of experimentation:
+Below is the table for the hyperparameters used in the **DQN** and **SARSA** algorithms based on the three stages of experimentation:<br>
+### DQN:
+<img alt="DQN Hyperparameters" src="https://github.com/user-attachments/assets/dd3bff16-063f-4122-b867-029d8fbd964e" width="400">
 
-| **Stage**       | **Learning Rate** | **Discount Factor** | **Update Frequency** |
-|-----------------|-------------------|---------------------|----------------------|
-| **DQN (Stage 1)** | 2.3e-2            | 0.9                 | 8                    |
-| **DQN (Stage 2)** | 2e-2              | 0.98                | 5                    |
-| **DQN (Stage 3)** | 1e-3              | 0.96                | 15                   |
-| **SARSA (Stage 1)** | 2.5e-2          | 0.95                | 10                   |
-| **SARSA (Stage 2)** | 1e-2            | 0.99                | 7                    |
-| **SARSA (Stage 3)** | 5e-3            | 0.92                | 12                   |
-
-Learning Rate	2.3e-2	2e-2	1e-3	2.3e-2
-Discount Factor	0.9	0.98	0.96	0.93
-Update Frequency	8	5	15	10
+### SARSA:
+<img alt="SARSA Hyperparameters" src="https://github.com/user-attachments/assets/2723684d-ec79-4f15-9412-fb32de9eabad" width="400">
 
 ## Experimentation
 
@@ -78,11 +69,16 @@ Update Frequency	8	5	15	10
 2. **Results Summary**:
    - DQN converges to optimal rewards, while SARSA struggles with noisy updates.
 
-**Reward Comparison Plot**:
-![Reward Comparison](path-to-your-plot/reward_comparison.png)
+### DQN plots:<br>
+<img alt="DQN Rewards" src="https://github.com/user-attachments/assets/3faaa044-d5df-44c0-b620-e42cf1b1b69d" width="330">
+<img alt="DQN Loss" src="https://github.com/user-attachments/assets/6c8fecdb-fd6f-4607-af14-76cda3b96809" width="330">
+<img alt="DQN Epsilon" src="https://github.com/user-attachments/assets/74ffc7fe-5a55-467d-ac04-0ad9cbe48945" width="330">
 
-**Loss Comparison (DQN only)**:
-![Loss Comparison](path-to-your-plot/loss_comparison.png)
+### SARSA plots: <br>
+<img alt="SARSA Rewards" src="https://github.com/user-attachments/assets/8e6f27aa-c492-4948-9a1b-0babc35681e9" width="330">
+<img alt="SARSA Loss" src="https://github.com/user-attachments/assets/309c2a9a-5abd-46f0-ac34-ee4f80b617fd" width="330">
+<img alt="SARSA Epsilon" src="https://github.com/user-attachments/assets/427f8900-c147-4e88-a287-b72dae56b8c8" width="330">
+
 
 ### Part 2: Boltzmann vs Epsilon-Greedy Exploration
 1. **Boltzmann Exploration**:  
@@ -96,8 +92,10 @@ Update Frequency	8	5	15	10
    - Boltzmann temperature control led to faster convergence compared to epsilon-greedy.
    - Hyperparameter tuning further accelerated convergence, with optimal parameters leading to early stopping at around 1500 episodes.
 
-**Boltzmann vs Epsilon-Greedy Exploration Plot**:
-![Exploration Comparison](path-to-your-plot/exploration_comparison.png)
+### Boltzmann Plots:
+<img alt="Boltzmann Rewards" src="https://github.com/user-attachments/assets/b635d979-dd86-4c5f-904a-866411d76d91" width="330">
+<img alt="Boltzmann Loss" src="https://github.com/user-attachments/assets/84308e0d-d8d9-4c79-9d7a-5155c85c8ea6" width="330">
+<img alt="Boltzmann Temperature" src="https://github.com/user-attachments/assets/4ff84bc6-4f2d-4617-8f49-b82625a6ee83" width="330">
 
 ### Part 3: Hyperparameter Tuning
 
@@ -106,9 +104,6 @@ Update Frequency	8	5	15	10
 | **Learning Rate**        | 2.3e-2  | 2e-2   | 1e-3    | 2.3e-2  |
 | **Discount Factor**      | 0.9     | 0.98   | 0.96    | 0.93    |
 | **Update Frequency**     | 8       | 5      | 15      | 10      |
-
-**Hyperparameter Tuning Results**:
-![Hyperparameter Tuning Plot](path-to-your-plot/hyperparameter_tuning.png)
 
 ## Conclusion
 
