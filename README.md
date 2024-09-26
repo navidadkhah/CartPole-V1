@@ -105,6 +105,10 @@ Below is the table for the hyperparameters used in the **DQN** and **SARSA** alg
 | **Discount Factor**      | 0.9     | 0.98   | 0.96    | 0.93    |
 | **Update Frequency**     | 8       | 5      | 15      | 10      |
 
+## GIF
+
+![Screenshot 2024-09-26 010003](https://github.com/user-attachments/assets/78784c94-13ea-4064-af00-f5e26e0d828a)
+
 ## Conclusion
 
 This project demonstrates the advantages of **DQN** over **SARSA** in reinforcement learning tasks, particularly when dealing with environments that require efficient exploration and experience replay. Boltzmann exploration proved more effective than epsilon-greedy, especially when tuned correctly.
