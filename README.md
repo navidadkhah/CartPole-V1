@@ -122,6 +122,6 @@ git clone https://github.com/navidadkhah/CartPole-V1
 cd CartPole-V1
 ```
 3. Run the training scripts for DQN and SARSA.
-
+4. You can run test function using their corresponding weights.
 ## License 
 This project is under the MIT License, and I’d be thrilled if you use and improve my work!
